@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Queen Bee</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author>Natalia DaLomba</author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>23900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1280</width>
+        <height>720</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Title Screen</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Keyboard" sid="166838174982672">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Mouse" sid="417434373342850">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Audio" sid="192821312883274">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="ScoreDisplay" sid="189734659248575">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TitleOfGame" sid="121553801201029">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="ByNataliaDaLomba" sid="696035958320412">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="PressSPACE" sid="725914443995037">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Player" sid="301594876555609">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="816620171453421">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="363267092084498">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="747543357491704">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="577311388977723" speed="5">
+                    <frame duration="1" hotspotX="0.521614" hotspotY="1.65809" original-source="C:\Users\Oksana\Pictures\Queen Bee Art\Queen Bee Moving 1.png">
+                        <image-point name="Imagepoint 1" x="0.521614" y="0.775735" />
+                        <collision-poly>
+                            <point x="0.953891" y="0.775735" />
+                            <point x="0.608069" y="0.886029" />
+                            <point x="0.521614" y="0.941176" />
+                            <point x="0.348703" y="0.996324" />
+                            <point x="0.0461095" y="0.775735" />
+                            <point x="0.132565" y="0.279412" />
+                            <point x="0.521614" y="0.00367647" />
+                            <point x="0.953891" y="0.224265" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Leaf" sid="408591374933894">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="536234557874903">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="485603653241192" speed="5">
+                    <frame duration="1" hotspotX="0.587549" hotspotY="0.429245" original-source="C:\Users\Oksana\Pictures\Queen Bee Art\Leaf Platform.png">
+                        <collision-poly>
+                            <point x="0.937743" y="0.00471698" />
+                            <point x="0.879377" y="0.429245" />
+                            <point x="0.821012" y="0.712264" />
+                            <point x="0.587549" y="0.924528" />
+                            <point x="0.178988" y="0.924528" />
+                            <point x="0.237354" y="0.429245" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Branch" sid="291535541434098">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="728043713087757">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="313863841454324" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BearClaw" sid="817313794719602">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="722278250105831">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="671721404650845" speed="5">
+                    <frame duration="1" hotspotX="1.14721" hotspotY="0.335" original-source="C:\Users\Oksana\Pictures\Queen Bee Art\Bear Claw.png">
+                        <collision-poly>
+                            <point x="0.84264" y="0.168508" />
+                            <point x="0.994924" y="0.417127" />
+                            <point x="0.994924" y="0.251381" />
+                            <point x="0.233503" y="0.831492" />
+                            <point x="0.0812183" y="0.334254" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Flower" sid="607910952746335">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="691545984445197">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="997067287490419" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HoneyLives" sid="216789773509949">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="338041180922109" speed="5">
+                    <frame duration="1" hotspotX="1.43716" hotspotY="4.45872" original-source="C:\Users\Oksana\Pictures\Queen Bee Art\Empty Honey Comb.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1.43716" hotspotY="4.45872">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1.43716" hotspotY="4.45872">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1.43716" hotspotY="4.45872">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="Beehive" sid="378225986769468">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="582524450698715" speed="5">
+                    <frame duration="1" hotspotX="0.645914" hotspotY="0.665198" original-source="C:\Users\Oksana\Pictures\Queen Bee Art\Beehive.png">
+                        <collision-poly>
+                            <point x="0.0622568" y="0.00440529" />
+                            <point x="0.645914" y="0.202643" />
+                            <point x="0.996109" y="0.268722" />
+                            <point x="0.645914" y="0.665198" />
+                            <point x="0.645914" y="0.665198" />
+                            <point x="0.645914" y="0.400881" />
+                            <point x="0.354086" y="0.995595" />
+                            <point x="0.120623" y="0.665198" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FlowerUI" sid="625229975527837">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="246003771441890" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TreeBackground" sid="738156603997885">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Oksana\Pictures\Queen Bee Art\Tree Background.png" />
+        </object-type>
+        <object-type name="Bearland" sid="628352133500953">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Oksana\Pictures\Queen Bee Art\Dirt.png" />
+        </object-type>
+        <object-type name="FlowerParticle" sid="765247926073097">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
+        <object-type name="BeehiveTitle" sid="219934427852062">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="584790868318630" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PlayerTitle" sid="213007242276330">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="635726653609272" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="RainDrop" sid="378016574115051">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="511688783341063" speed="5">
+                    <frame duration="1" hotspotX="0.570093" hotspotY="0.5" original-source="C:\Users\Oksana\Pictures\Drop.png">
+                        <collision-poly>
+                            <point x="0.28972" y="0.254098" />
+                            <point x="0.570093" y="0.131148" />
+                            <point x="0.850467" y="0.254098" />
+                            <point x="0.990654" y="0.5" />
+                            <point x="0.850467" y="0.745902" />
+                            <point x="0.570093" y="0.991803" />
+                            <point x="0.149533" y="0.868852" />
+                            <point x="0.00934579" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BeeSpike" sid="278243291628259">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="992454206141876">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="909073541005331" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.485981" original-source="C:\Users\Oksana\Pictures\Queen Bee Art\Stinger.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="0.915169" />
+                            <point x="0" y="0.340043" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GrizTheBear" sid="307439003175372">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="923766895566576">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="969328520763911">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="263920026804362" speed="5">
+                    <frame duration="1" hotspotX="0.447471" hotspotY="0.599369" original-source="C:\Users\Oksana\Pictures\Queen Bee Art\Bear 1.png">
+                        <collision-poly>
+                            <point x="0.120623" y="0.287066" />
+                            <point x="0.529183" y="0.0504732" />
+                            <point x="0.879377" y="0.334385" />
+                            <point x="0.70428" y="0.760252" />
+                            <point x="0.529183" y="0.996845" />
+                            <point x="0.29572" y="0.807571" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Phase1" pingpong="0" repeatcount="1" repeatto="0" sid="455754913993217" speed="5">
+                    <frame duration="1" hotspotX="0.529183" hotspotY="0.618297" original-source="C:\Users\Oksana\Pictures\Queen Bee Art\Bear2.png">
+                        <collision-poly>
+                            <point x="0.120623" y="0.287066" />
+                            <point x="0.529183" y="0.0504732" />
+                            <point x="0.879377" y="0.334385" />
+                            <point x="0.70428" y="0.760252" />
+                            <point x="0.529183" y="0.996845" />
+                            <point x="0.29572" y="0.807571" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Phase2" pingpong="0" repeatcount="1" repeatto="0" sid="153322018037964" speed="5">
+                    <frame duration="1" hotspotX="0.529183" hotspotY="0.618297" original-source="C:\Users\Oksana\Pictures\Queen Bee Art\Bear3.png">
+                        <collision-poly>
+                            <point x="0.120623" y="0.287066" />
+                            <point x="0.529183" y="0.0504732" />
+                            <point x="0.879377" y="0.334385" />
+                            <point x="0.70428" y="0.760252" />
+                            <point x="0.529183" y="0.996845" />
+                            <point x="0.29572" y="0.807571" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Instructions" sid="563603952419095">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Ladybug" sid="871676062704442">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="162721942339382">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="756385219416112" speed="5">
+                    <frame duration="1" hotspotX="0.992701" hotspotY="0.545455" original-source="C:\Users\Oksana\Pictures\Queen Bee Art\lady bug.png">
+                        <collision-poly>
+                            <point x="0.992701" y="0.402597" />
+                            <point x="0.664234" y="0.987013" />
+                            <point x="0.00729927" y="0.402597" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bossland" sid="925557008235118">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="894238092226213">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Oksana\Pictures\Queen Bee Art\boss ground.png" />
+        </object-type>
+        <object-type name="Honeycomb" sid="725376944774874">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="536855014016862">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="482334556975872" speed="5">
+                    <frame duration="1" hotspotX="0.737705" hotspotY="1.00935" original-source="C:\Users\Oksana\Pictures\Queen Bee Art\Honey Comb.png">
+                        <collision-poly>
+                            <point x="0.131148" y="0.28972" />
+                            <point x="0.745902" y="0.149533" />
+                            <point x="0.745902" y="0.990654" />
+                            <point x="0.745902" y="0.850467" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Level2" sid="595118291364580">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Oksana\Pictures\Queen Bee Art\Level 2 Background.png" />
+        </object-type>
+        <object-type name="Platform2" sid="259118985726331">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="880435952529640">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="908148380690347" speed="5">
+                    <frame duration="1" hotspotX="0.587549" hotspotY="0.429245" original-source="C:\Users\Oksana\Pictures\Queen Bee Art\Leaf Platform Level 2.png">
+                        <collision-poly>
+                            <point x="0.937743" y="0.00471698" />
+                            <point x="0.879377" y="0.429245" />
+                            <point x="0.821012" y="0.712264" />
+                            <point x="0.587549" y="0.924528" />
+                            <point x="0.178988" y="0.924528" />
+                            <point x="0.237354" y="0.429245" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Title" sid="595958792758543">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="874489353998887" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Oksana\Pictures\Queen Bee Art\Title.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bee" sid="509401292331906">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="867733050143228" speed="5">
+                    <frame duration="1" hotspotX="0.521614" hotspotY="0.775735" original-source="C:\Users\Oksana\Pictures\Queen Bee Art\Queen Bee Moving 1.png">
+                        <collision-poly>
+                            <point x="0.953891" y="0.775735" />
+                            <point x="0.608069" y="0.886029" />
+                            <point x="0.521614" y="0.941176" />
+                            <point x="0.348703" y="0.996324" />
+                            <point x="0.0461095" y="0.775735" />
+                            <point x="0.132565" y="0.279412" />
+                            <point x="0.521614" y="0.00367647" />
+                            <point x="0.953891" y="0.224265" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Background3" sid="284373769211851">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Oksana\Pictures\Queen Bee Art\Tree Background.png" />
+        </object-type>
+        <object-type name="Leaf3" sid="770352783818334">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="750423557501824">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="652832399809677" speed="5">
+                    <frame duration="1" hotspotX="0.587549" hotspotY="0.429245" original-source="C:\Users\Oksana\Pictures\Queen Bee Art\Leaf Platform.png">
+                        <collision-poly>
+                            <point x="0.937743" y="0.00471698" />
+                            <point x="0.879377" y="0.429245" />
+                            <point x="0.821012" y="0.712264" />
+                            <point x="0.587549" y="0.924528" />
+                            <point x="0.178988" y="0.924528" />
+                            <point x="0.237354" y="0.429245" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BakgroundBoss" sid="529162287940245">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Oksana\Pictures\Queen Bee Art\Background4.png" />
+        </object-type>
+        <object-type name="Sprite" sid="890014112041390">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="277420926654488" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Oksana\Pictures\ictory.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bee2" sid="773198708180530">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="876243747384253" speed="5">
+                    <frame duration="1" hotspotX="0.521614" hotspotY="0.775735" original-source="C:\Users\Oksana\Pictures\Queen Bee Art\Queen Bee Moving 1.png">
+                        <collision-poly>
+                            <point x="0.953891" y="0.775735" />
+                            <point x="0.608069" y="0.886029" />
+                            <point x="0.521614" y="0.941176" />
+                            <point x="0.348703" y="0.996324" />
+                            <point x="0.0461095" y="0.775735" />
+                            <point x="0.132565" y="0.279412" />
+                            <point x="0.521614" y="0.00367647" />
+                            <point x="0.953891" y="0.224265" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Beargone" sid="444396132435924">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="970970607109795" speed="5">
+                    <frame duration="1" hotspotX="0.529183" hotspotY="0.618297" original-source="C:\Users\Oksana\Pictures\Queen Bee Art\Bear 1.png">
+                        <collision-poly>
+                            <point x="0.120623" y="0.287066" />
+                            <point x="0.529183" y="0.0504732" />
+                            <point x="0.879377" y="0.334385" />
+                            <point x="0.70428" y="0.760252" />
+                            <point x="0.529183" y="0.996845" />
+                            <point x="0.29572" y="0.807571" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Title Screen.xml</layout>
+        <layout>Level 1.xml</layout>
+        <layout>Level 2.xml</layout>
+        <layout>Level 3.xml</layout>
+        <layout>Boss Level.xml</layout>
+        <layout>Victory.xml</layout>
+        <layout>Game Over.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="0" />
+        <global-instance type="Mouse" uid="1" />
+        <global-instance type="Audio" uid="2">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="BeeSpike.ogg" />
+        <file name="BossLevel.ogg" />
+        <file name="Die.ogg" />
+        <file name="GameOver.ogg" />
+        <file name="LevelMusic.ogg" />
+        <file name="NextLevel.ogg" />
+        <file name="Victory.ogg" />
+        <file name="PickupFlower.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
